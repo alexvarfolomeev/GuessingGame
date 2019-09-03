@@ -3,9 +3,12 @@ package com.packages;
 import javax.swing.*;
 import java.util.Scanner;
 
-public class Main {
+public class Main extends GuessingGameUX{
 
     public static void main(String[] args) {
+
+        new GuessingGameUX();
+
         Scanner scan = new Scanner(System.in);
         String playAgain = "";
         do {
