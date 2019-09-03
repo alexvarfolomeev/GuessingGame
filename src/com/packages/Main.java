@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String playAgain = "";
+        int counter = 0;
         do {
             int theNumber = (int) (Math.random() * 100 + 1);
             System.out.println(theNumber);
@@ -23,6 +24,8 @@ public class Main {
                 } else {
                     System.out.println(guess + " is correct. You win!");
                 }
+                counter = counter + 1;
+                System.out.println("You made " + counter + " attempts. Nice try!");
             }
             System.out.println("Would you like to play again (y / n)?");
             playAgain = scan.next();
